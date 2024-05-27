@@ -208,7 +208,7 @@ return (
 									  required={true}></textarea>
 						</div>
 						<Button onClick={(e) => {
-							axios.post('http://45.141.103.150:8080/api/sendmessage',
+							axios.post('https://45.141.103.150:8080/api/sendmessage',
 								{"message": message},
 								{
 									params: {
