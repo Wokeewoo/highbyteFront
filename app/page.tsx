@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import {Button} from "@nextui-org/button";
-import axios from "axios";
+import axios from 'axios';
 
 
 
