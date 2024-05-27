@@ -3,10 +3,10 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint"
+		"dev": "../highbytenextui/next-app-template-main/node_modules/.bin/next dev",
+		"build": "../highbytenextui/next-app-template-main/node_modules/.bin/next build",
+		"start": "../highbytenextui/next-app-template-main/node_modules/.bin/next start",
+		"lint": "../highbytenextui/next-app-template-main/node_modules/.bin/next lint"
 	},
 	"dependencies": {
 		"@nextui-org/button": "^2.0.31",
