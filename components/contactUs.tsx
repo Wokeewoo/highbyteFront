@@ -8,7 +8,7 @@ import React from "react";
 
 export default function ContactUs() {
     async function handleSubmit(event: React.MouseEvent) {
-        await axios.post('https://45.141.103.150:8080/api/sendmessage',
+        await axios.post('http://45.141.103.150:8080/api/sendmessage',
                 {"message": message},
                 {
                     params: {
