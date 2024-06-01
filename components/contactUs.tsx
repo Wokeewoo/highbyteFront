@@ -2,6 +2,7 @@
 import {Input, Textarea} from "@nextui-org/input";
 import {Button} from "@nextui-org/button";
 import {Spacer} from "@nextui-org/spacer";
+import {zoomIn, fadeIn} from "react-animations";
 import axios from "axios";
 import React from "react";
 
@@ -34,9 +35,13 @@ export default function ContactUs() {
     const [phone, setPhone] = React.useState("");
     const [message, setMessage] = React.useState("");
 
+
+    const useEffect = () => {
+
+    }
     return (
         <>
-            <div className="home-elem-65">
+            <div id="contacts" className="home-elem-65">
                 <div className="home-elem-64">
                     <div className="home-elem-124">
                         <div className="home-elem-108"> <span className="cd-paragraph-clean home-elem-107">

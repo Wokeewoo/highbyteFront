@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function DescriptionSection() {
     return (
         <>
-            <div className="home-elem-41"> <span className="home-elem-40">
+            <div id="services" className="home-elem-41"> <span className="home-elem-40">
             <p>Основные преимущества и преимущества для клиентов </p>
     </span><span className="home-elem-42"><a href="#" className="link" target="_self">
     <p>Ознакомьтесь с нашими первоклассными решениями для веб-разработки. </p>

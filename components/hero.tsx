@@ -1,11 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import { fadeIn } from "react-animations"
 
 export default function Hero() {
+
     return (
         <>
-            <div className="home-elem-1 flex-wrap">
-                <div className="home-elem-2">
+            <div id="main" className="home-elem-1 flex-wrap">
+                <div className=" home-elem-2 animate-appearance-in">
                     <Image alt="ee" src="/hero_pic.jpg" width={400} height={400} className="hero_pic"/>
                     <div className="home-elem-4">
                         <div className="home-elem-5">
