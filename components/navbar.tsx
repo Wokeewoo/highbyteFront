@@ -64,14 +64,14 @@ export const NavbarM = () => {
 	))}
 
 	return (
-		<NextUINavbar className="navbar" shouldHideOnScroll isBlurred={false} maxWidth="full" position="sticky" >
-			<NavbarContent className="basis-1/5 sm:basis-full" >
+		<NextUINavbar className="navbar " shouldHideOnScroll isBlurred={false} maxWidth="full" >
+			<NavbarContent className="sm:basis-full justify-center align-middle " >
 				<NavbarBrand as="li" className="gap-3 max-w-fit ">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
 						<Logo />
 					</NextLink>
 				</NavbarBrand>
-				<ul className="hidden sm:flex gap-4 justify-start ml-2">
+				<ul className="hidden sm:flex gap-4 justify-center ml-2">
 					{siteConfig.navItems.map((item) => (
 						<NavbarItem key={item.href}>
 							<NextLink
@@ -89,32 +89,9 @@ export const NavbarM = () => {
 				</ul>
 			</NavbarContent>
 
-			<NavbarContent
-				className="hidden sm:flex basis-1/5 sm:basis-full"
-				justify="end"
-			>
-				<NavbarItem className="hidden sm:flex gap-2">
-					<Link isExternal href="/" aria-label="Twitter">
-						<TwitterIcon className="text-default-500" />
-					</Link>
-					<Link isExternal href="/" aria-label="Discord">
-						<DiscordIcon className="text-default-500" />
-					</Link>
-					<Link isExternal href="/" aria-label="Github">
-						<GithubIcon className="text-default-500" />
-					</Link>
-				</NavbarItem>
-			</NavbarContent>
 
-			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-				<Link isExternal href="/" aria-label="Github">
-					<GithubIcon className="text-default-500" />
-				</Link>
-				<NavbarMenuToggle />
-			</NavbarContent>
 
 			<NavbarMenu>
-				{searchInput}
 				<div className="mx-4 mt-2 flex flex-col gap-2">
 					{siteConfig.navMenuItems.map((item, index) => (
 						<NavbarMenuItem key={`${item}-${index}`}>

@@ -21,7 +21,6 @@ return (
 		<Benefits/>
 		<DescriptionSection/>
 		<ContactUs/>
-		<Footer/>
 	</>
 )
 }

@@ -6,7 +6,7 @@ export default function Hero() {
 
     return (
         <>
-            <div id="main" className="home-elem-1 flex-wrap">
+            <div id="main" className="home-elem-1 flex-wrap ">
                 <div className=" home-elem-2 animate-appearance-in">
                     <Image alt="ee" src="/hero_pic.jpg" width={400} height={400} className="hero_pic"/>
                     <div className="home-elem-4">

@@ -6,6 +6,7 @@ import { Providers } from "./providers";
 import {NavbarM} from "@/components/navbar";
 import clsx from "clsx";
 import React from "react";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
 	title: {
@@ -61,11 +62,12 @@ export default function RootLayout({
 				)}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-					<div className="hero relative flex flex-col h-screen">
+					<div className="hero relative flex flex-col h-fit">
 						<NavbarM/>
-						<main className="">
+						<main className="h-full">
 							{children}
 						</main>
+						<Footer/>
 					</div>
 				</Providers>
 			</body>

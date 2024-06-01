@@ -5,6 +5,7 @@ import {Spacer} from "@nextui-org/spacer";
 import {zoomIn, fadeIn} from "react-animations";
 import axios from "axios";
 import React from "react";
+import {Checkbox} from "@nextui-org/checkbox";
 
 export default function ContactUs() {
     async function handleSubmit(event: React.MouseEvent) {
@@ -110,6 +111,7 @@ export default function ContactUs() {
                                           placeholder="Введите ваше сообщение" className="home-elem-102"
                                           required={true}></textarea>
                             </div>
+                            <Checkbox defaultSelected size="md" className="m-2 w-full flex-row">Я согласен с <a  className="w-fit flex-row a-link" href="privacy-policy" >политикой конфиденциальности</a></Checkbox>
                             <Button onClick={handleSubmit} className="home-elem-75">Отправить сейчас
                             </Button>
                         </div>
